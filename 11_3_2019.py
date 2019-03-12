@@ -34,8 +34,7 @@ except IOError:
 #option to either abort or continue
 def checkOut():
     if os.path.isfile("out.txt") is True:
-        out = ctypes.windll.user32.MessageBoxW(0, "Press OK to append or Cancel to abort.", "out.txt already exists!",
-                                               MB_OKCXL | STOP_ICO)
+        out = ctypes.windll.user32.MessageBoxW(0, "Press OK to append or Cancel to abort.", "out.txt already exists!", MB_OKCXL | STOP_ICO)
         if out is 2:
             sys.exit()
         else:
