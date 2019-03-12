@@ -60,9 +60,9 @@ def parsAm(dataIn):
 
 #this function is fed the global input file (the variable "data") and the number of entries
 #that need a pair-searching. It basically counts the characters of every line until it finds
-#a free space and feeds everything before said free space into the next function for content
-#checking plus it takes everything *after* the free space and feeds that into the next
-#function so it can be written into the output file later. It also keeps track of how many
+#a free space and feeds everything after said free space into the next function for content
+#checking plus it takes everything *before* the free space (along with the free space) and feeds that
+#into the next function so it can be written into the output file later. It also keeps track of how many
 #entries have been written to the output file.
 def parsFin(dataIn, dataLenLoc):
     track1 =-1
